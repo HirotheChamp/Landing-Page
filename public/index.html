@@ -8,7 +8,7 @@
    <link rel="stylesheet" href="/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
@@ -57,8 +57,10 @@
 
 <p style=" color: #7d7d7d;">A powerful tool that can help you stay organized and manage your tasks efficiently. Take control of your tasks and achieve your goals with our new interface.</p>
 <div class="buttons" style="padding-top: 20px;">
-<button style="white-space: normal; width: 110px; border: none; border-radius: 10px; background-color: white; margin-right: 15px;"><i class="fab fa-apple"></i><span style="font-size: 8px;">Download on the </span><span style="font-weight: bold;">App Store</span></button>
-<button style="white-space: normal; width: 120px; border: none; border-radius: 10px; background-color: white;"><i class="fab fa-google-play"></i><span style="font-size: 8px;">GET IT ON</span> <span style="font-weight: bold;">Google Play</span></button>
+  <form target="_blank">
+<button style="white-space: normal; width: 110px; border: none; border-radius: 10px; background-color: white; margin-right: 15px;" type="submit" formaction="https://play.google.com/" ><i class="fab fa-apple"></i><span style="font-size: 8px;">Download on the </span><span style="font-weight: bold;">App Store</span></button>
+<button style="white-space: normal; width: 120px; border: none; border-radius: 10px; background-color: white;" type="submit" formaction="https://play.google.com/"><i class="fab fa-google-play"></i><span style="font-size: 8px;">GET IT ON</span> <span style="font-weight: bold;">Google Play</span></button>
+</form>
 </div>
 <div class="user-section" style="padding-top: 70px; display: flex;">
 
@@ -69,10 +71,14 @@
 
   </div>
 
-<div style="background-color: #a1a1f1; border-radius: 50px; width: 300px; display: flex; height:80px;">
-  <div class="user1"><img src="../img/kyleprofile.jpg" style="width: 50px; border-radius: 50%; border: solid white; height: 55px;"/></div>
-  <div class="user2"><img src="../img/selinapic.jpg" style="width: 50px; border-radius: 50%; border: solid white; height: 55px;"/></div>
-  <div class="user3"><img src="../img/profile.jpg" style="width: 50px; border-radius: 50%; border: solid white; height: 55px;"/></div>
+<div style="background-color: #a1a1f1; border-radius: 50px; width: 260px; display: flex; height:80px; margin-left: auto;">
+  <div class="user-image-group" style="display: flex; margin-top: 7px; margin-left: 10px;">
+  <div class="user1"><img src="../img/kyleprofile.jpg" style="width: 60px; border-radius: 50%; border: solid 1.5px white; height: 65px; position: relative;"/></div>
+  <div class="user2"><img src="../img/selinapic.jpg" style="width: 60px; border-radius: 50%; border: solid 1.5px white; height: 65px; position: relative;  right: 15px;"/></div>
+  <div class="user3"><img src="../img/profile.jpg" style="width: 60px; border-radius: 50%; border: solid 1.5px white; height: 65px; position: relative; right: 35px;"/></div>
+</div>
+
+<div class="arrow-btn" style="margin-top: 8px; "><button style="  display:block; height: 65px; width: 60px; border-radius: 50%; border: 1px solid blue; background-color: black;"><i class="fa fa-arrow-right" style="color: white; "></i></button></div>
 </div>
 
 </div>
