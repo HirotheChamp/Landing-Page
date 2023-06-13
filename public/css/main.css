@@ -6,7 +6,7 @@ body {
     height: auto;
     margin: 0;
      padding: 0;
-        background-image: url("../img/phonebackground.png"), url("../img/blackbackground.png");
+        background-image: url("../img/phonebackground2.png"), url("../img/blackbackground.png");
         background-size:  contain, cover;
         background-repeat:  no-repeat, no-repeat;
         background-position: right, center;  
@@ -14,7 +14,9 @@ body {
         
 }
 
-
+a:hover {
+    color: white;
+}
 
 
 .nav-item {
@@ -27,4 +29,8 @@ body {
 
 .user-text {
     color:   #7d7d7d;
+}
+#content1::after{
+    content: "\a";
+    white-space: pre;
 }
