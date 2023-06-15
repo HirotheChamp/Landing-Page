@@ -141,7 +141,7 @@ ul {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     opacity: 0.98;
     visibility: hidden;
   }
@@ -165,15 +165,17 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
     height: 100vh;
-    overflow: hidden;
+
+    overflow: hidden; 
     background: #272727;
-    list-style-type: none;
+     list-style-type: none;
     padding-right: 1rem;
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin-left: 25px;
+    z-index: 9999;
   }
   
   .nav .menu-nav.open {
@@ -232,6 +234,8 @@ ul {
             transition-delay: 0.55s;
   }
 
+  
+
   @media screen and (min-width: 768px) {
     .menu-btn {
       visibility: hidden;
@@ -248,6 +252,7 @@ ul {
       height: 100%;
       background: transparent;
       text-align: right;
+       
     }
     .nav .menu-nav_item {
       display: inline;
@@ -281,6 +286,20 @@ ul {
             background-repeat:  no-repeat;
             background-position: center;  
             background-attachment: fixed;
+    }
+
+    .nav .menu-nav {
+      
+      display: flex;
+   
+      height: 100vh;
+      width: 100vw;
+   
+    }
+
+    .nav .logo {
+  
+      margin-bottom: 20px;
     }
 
     .apple-btn {
